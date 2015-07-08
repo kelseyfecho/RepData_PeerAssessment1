@@ -6,7 +6,11 @@ output: html_document
 ---
 
 ##Load the Data##
-Set the working directory to the folder where out data set is saved. To do so, save the folder location into the dir variable, and call the setwd argument as below. 
+Set the working directory to the folder where out data set is saved. To do so, save the folder location into the dir variable, and call the setwd argument as below.
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.path="figure/")
+```
+
 ```{r}
 dir <- c("C:/Users/kfecho/Documents/Training/Coursera/Reproducible Research/RepData_PeerAssessment1")
 setwd(dir)
